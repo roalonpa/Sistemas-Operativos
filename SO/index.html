@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operativos</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <main id="sistemas-operativos">
+        <section id="SO-0">
+            <h1>Server vs Workstation</h1>
+            <div id="server">
+                <h2 class="title">Server</h2>
+                <p class="definition">Es un sistema operativo diseñado para dar servicios a otras computadoras a través de una red. No está pensado para que alguien lo use sentado frente a él, sino para que esté prendido 24/7 respondiendo pedidos.</p>
+                <ul class="characteristics">
+                    <li class="item">Optimizado para estabilidad, seguridad y manejar muchas conexiones simultáneas.</li>
+                    <li class="item">Muchas veces ni siquiera tiene interfaz gráfica (se maneja por terminal/comandos) para ahorrar recursos.</li>
+                    <li class="item">Atiende a múltiples usuarios o máquinas al mismo tiempo.</li>
+                    <li class="item">Hardware enfocado en RAM, almacenamiento y red, no tanto en gráficos.</li>
+                    <li class="item">Servicios típicos: alojar páginas web, bases de datos, correo, archivos compartidos.</li>
+                </ul>
+                <h3 class="sub-heading">Examples</h3>
+                <ul class="examples">
+                    <li class="item">Windows Server (2019, 2022).</li>
+                    <li class="item">Ubuntu Server.</li>
+                    <li class="item">Red Hat Enterprise Linux.</li>
+                </ul>
+            </div>
+            <div id="workstation">
+                <h2 class="title">Workstation</h2>
+                <p class="definition">Es un sistema operativo (o computadora) diseñado para un usuario individual que lo usa directamente, sentado frente a la pantalla.</p>
+                <ul class="characteristics">
+                    <li class="item">Tiene interfaz gráfica pensada para trabajar (apps, navegador, edición, diseño, etc.)</li>
+                    <li class="item">Optimizado para tareas del usuario: procesar texto, navegar, jugar, programar.</li>
+                    <li class="item">Hardware más enfocado a gráficos, procesador rápido para tareas interactivas.</li>
+                    <li class="item">Un solo usuario activo a la vez (en general).</li>
+                </ul>
+                <h3 class="sub-heading">Examples</h3>
+                <ul class="examples">
+                    <li class="item">Windows 11 (versión común).</li>
+                    <li class="item">MacOS en una MacBook.</li>
+                    <li class="item">Ubuntu Desktop.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="SO-1"> <!--Sistemas operativos-->
+            <h1 class="title">Sistemas Operativos</h1>
+            
+            <div id="S1"> <!--Sistema 1: Windows-->
+                <h2 class="title">Windows</h2>
+                <p class="description">Sistema operativo desarrollado por Microsoft, lanzado por primera vez en 1985. Es el sistema operativo más usado del mundo en computadoras de escritorio y portátiles.</p>
+                <h3 class="sub-heading">Caracteristicas</h3>
+                <ul class="characteristics">
+                    <li class="item">Interfaz gráfica con ventanas, íconos y escritorio, lo que lo hace fácil de usar</li>
+                    <li class="item">Muy utilizado a lo largo del mundo por su compatibilidad con videojuegos, programas y dispositivos.</li>
+                    <li class="item">Software propietario (de pago, aunque viene preinstalado en la mayoría de las PC)</li>
+                    <li class="item">Gran compatibilidad con hardware de distintas marcas</li>
+                </ul>
+                <h3 class="sub-heading">Tipos</h3>
+                <ul class="types">
+                    <li class="item">Windows WS (Workstation), como Windows 11, está pensado para que una sola persona use programas, trabaje o juegue directamente en la computadora</li>
+                    <li class="item">Windows Server es una versión diseñada para administrar recursos y brindar servicios a muchas computadoras en una red, con servidores</li>
+                </ul>
+                <h3 class="sub-heading">Comandos comunes</h3>
+                <ul class="common-commands">
+                    <li class="item">dir → ver archivos de la carpeta actual</li>
+                    <li class="item">cd [NOMBRE] → cambiar de carpeta</li>
+                    <li class="item">cd .. → volver a la carpeta anterior</li>
+                    <li class="item">mkdir [NOMBRE] → crear una carpeta nueva</li>
+                    <li class="item">tasklist → ver procesos abiertos</li>
+                    <li class="item">shutdown → apagar o reiniciar la PC</li>
+                    <li class="item">ipconfig → ver configuración de red</li>
+                    <li class="item">net user → gestionar usuarios (Server)</li>
+                    <li class="item">gpupdate → actualizar políticas de red (Server)</li>
+                    <li class="item">sfc /scannow → reparar archivos del sistema</li>
+                </ul>
+            </div>
+
+            <div id="S2"> <!--Sistema 2: MacOS-->
+                <h2 class="title">macOS</h2>
+                <p class="description">Sistema operativo desarrollado por Apple, exclusivo para las computadoras de la marca (MacBook, iMac, Mac mini, Mac Studio). Se lanzó en 2001 como Mac OS X y está basado en Unix.</p>
+                <h3 class="sub-heading">Characteristics</h3>
+                <ul class="characteristics">
+                    <li class="item">Interfaz gráfica pulida, con el Dock en la parte inferior y la barra de menú superior fija.</li>
+                    <li class="item">Software propietario: solo se puede usar legalmente en hardware de Apple.</li>
+                    <li class="item">Muy usado en diseño gráfico, edición de video, producción musical y desarrollo de software.</li>
+                    <li class="item">Integración fluida con otros dispositivos Apple (iPhone, iPad, AirPods) mediante funciones como AirDrop, Handoff y Continuity.</li>
+                    <li class="item">Al estar basado en Unix, incluye una terminal potente parecida a la de Linux.</li>
+                </ul>
+                <h3 class="sub-heading">Tipos</h3>
+                <p class="description">No tiene "ediciones" como Windows. Apple lanza una versión nueva por año, cada una con nombre de un lugar de California (Ventura, Sonoma, Sequoia, etc.)</p>
+                <h3 class="sub-heading">Comandos Comunes</h3>
+                <ul class="common-commands">
+                    <li class="item">ls → ver archivos y carpetas</li>
+                    <li class="item">cd [NOMBRE] → abrir una carpeta</li>
+                    <li class="item">cd .. → volver a la carpeta anterior</li>
+                    <li class="item">cd ~ → ir a la carpeta personal (Home)</li>
+                    <li class="item">mkdir [NOMBRE] → crear una carpeta nueva</li>
+                    <li class="item">touch [nombre] → crear un archivo vacío</li>
+                    <li class="item">mv [origen] [destino] → mover un archivo</li>
+                    <li class="item">open . → abrir la carpeta actual en Finder</li>
+                    <li class="item">brew install [programa] → instalar un programa (con Homebrew, el gestor de paquetes más usado en Mac)</li>
+                </ul>
+            </div>
+
+            <div id="S3"> <!--Sistema 3: Linux-->
+                <h2 class="title">Linux</h2>
+                <p class="description">¿Qué es? Linux es un sistema operativo de código abierto y gratuito, creado por Linus Torvalds en 1991. A diferencia de Windows y MacOS, Linux no es un único sistema sino una familia enorme de versiones llamadas distribuciones (o "distros"), cada una pensada para distintos usos: Ubuntu, Debian, Fedora, Arch, Mint, etc.</p>
+                <h3 class="sub-heading">Caracteristicas</h3>
+                <ul class="characteristics">
+                    <li class="item">Software libre: cualquiera puede ver, modificar y distribuir el código.</li>
+                    <li class="item">Gratis en la mayoría de sus distribuciones.</li>
+                    <li class="item">Muy usado en servidores, supercomputadoras y dispositivos (Android está basado en el núcleo de Linux).</li>
+                    <li class="item">Altamente personalizable: podés cambiar prácticamente cualquier parte del sistema.</li>
+                    <li class="item">Más liviano que Windows, suele funcionar bien en computadoras viejas.</li>
+                    <li class="item">Fuerte cultura de uso de la terminal, aunque también tiene interfaces gráficas.</li>
+                </ul>
+                <h3 class="sub-heading">Tipos</h3>
+                <ul class="types">
+                    <li class="item">Ubuntu: una de las distribuciones más populares y amigables para principiantes.</li>
+                    <li class="item">Debian: conocida por su estabilidad y seguridad, base de muchas otras distros.</li>
+                    <li class="item">Fedora: enfocada en software libre y tecnologías nuevas.</li>
+                    <li class="item">Arch Linux: para usuarios avanzados que quieren personalizar todo desde cero.</li>
+                </ul>
+                <h3 class="sub-heading">Comandos Comunes</h3>
+                <ul class="common-commands">
+                    <li class="item">pwd: Muestra la ruta del directorio en el que te encuentras actualmente.</li>
+                    <li class="item">cd [directorio]: Cambia tu ubicación actual al directorio especificado.</li>
+                    <li class="item">ls: Lista los archivos y carpetas que contiene tu directorio actual.</li>
+                    <li class="item">mkdir [nombre]: Crea una nueva carpeta.</li>
+                    <li class="item">touch [nombre]: Crea un archivo vacío o actualiza su fecha de modificación.</li>
+                    <li class="item">cat [archivo]: Muestra el contenido completo de un archivo de texto en la pantalla.</li>
+                    <li class="item">cp [origen] [destino]: Copia archivos o carpetas.</li>
+                    <li class="item">mv [origen] [destino]: Mueve o renombra archivos y carpetas.</li>
+                    <li class="item">rm [archivo]: Elimina un archivo.</li>
+                </ul>
+                <div id="S3-1"> <!--Sistema 3.1: Ubuntu (dentro de Linux)-->
+                    <h2 class="title">Ubuntu</h2>
+                    <p class="description">¿Qué es? Ubuntu es una distribución de Linux desarrollada por la empresa Canonical desde 2004. Es la versión más conocida y usada de Linux para usuarios comunes, porque busca ser fácil de instalar y de usar sin perder la potencia de Linux.</p>
+                    <h3 class="sub-heading">Caracteristicas</h3>
+                    <ul class="characteristics">
+                        <li class="item">A diferencia de otros sistemas informáticos que lanzan actualizaciones "cuando están listas" o de forma caótica, Canonical tiene un calendario estricto e inamovible desde hace dos décadas: se publica una versión nueva cada seis meses (en abril y octubre).</li>
+                        <li class="item"> Cada dos años se lanza una versión LTS (Long Term Support) con soporte normal de 5 años.</li>
+                        <li class="item">Ubuntu creó y empujó su propio sistema de instalación de programas llamado Snap, que incluye todas las dependencias que el programa necesita para funcionar dentro de una "caja" cerrada (sandbox). Si instalás una aplicación de diseño pesada, esta no va a romper nada del resto del sistema operativo.</li>
+                    </ul>
+                    <h3 class="sub-heading">Comandos Comunes</h3>
+                    <ul class="common-commands">
+                        <li class="item">ls → ver carpetas disponibles</li>
+                        <li class="item">cd [NOMBRE] → abrir carpeta</li>
+                        <li class="item">cd .. → regresar a la carpeta anterior</li>
+                        <li class="item">cd → ir directo a tu carpeta personal (Home)</li>
+                        <li class="item">nautilus . → abrir la carpeta actual en una ventana</li>
+                        <li class="item">nautilus ~/Descargas → abrir una carpeta específica</li>
+                        <li class="item">mkdir [NOMBRE] → crear una carpeta nueva</li>
+                        <li class="item">touch [nombre] → crear un archivo de texto vacío</li>
+                        <li class="item">mv [origen] [destino] → mover un archivo</li>
+                        <li class="item">sudo apt install [programa] → descargar e instalar un programa desde la terminal</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section id="Emuladores">
+            <div>
+                <h2 class="title">Emuladores</h2>
+                <h3 class="sub-heading">Que son?</h3>
+                <p class="description">Los emuladores de sistemas operativos son programas que simulan el funcionamiento de un sistema operativo (o de una computadora entera) dentro de otro sistema operativo. Básicamente, te permiten "engañar" a una compu para que se comporte como si fuera otra distinta.</p>
+                <h3 class="sub-heading">Como funcionan?</h3>
+                <p class="description">Un emulador imita el hardware y/o software de un sistema diferente, traduciendo las instrucciones del sistema "emulado" para que la máquina real las entienda y ejecute. Es como un traductor en tiempo real entre dos sistemas que no hablan el mismo "idioma".</p>
+                <h3 class="sub-heading">Para que se usan?</h3>
+                <ul class="characteristics">
+                    <li class="item">Correr software de otro SO: usar programas de Windows en una Mac, o apps de Android en una PC.</li>
+                    <li class="item">Probar sistemas operativos sin instalarlos: probar Linux desde Windows sin formatear nada.</li>
+                    <li class="item">Desarrollo de software: probar apps en distintos sistemas (ej: una app de iPhone desde una compu).</li>
+                    <li class="item">Retrocompatibilidad: ejecutar programas viejos que ya no corren en sistemas modernos.</li>
+                    <li class="item">Videojuegos retro: emuladores de consolas viejas (Nintendo, PlayStation) en la PC.</li>
+                </ul>
+                <h3 class="sub-heading">Emuladores y herramientas principales</h3>
+                <ul class="characteristics">
+                    <li class="item">VirtualBox (Oracle): gratis, multiplataforma, virtualización. El más usado en educación.</li>
+                    <li class="item">VMware: similar a VirtualBox, más profesional, hay versión paga.</li>
+                    <li class="item">Wine: corre programas de Windows en Linux/Mac sin emular Windows entero (traduce llamadas API). No es ni emulador ni máquina virtual en sentido estricto.</li>
+                    <li class="item">WSL (Windows Subsystem for Linux): Microsoft permite correr Linux directamente dentro de Windows.</li>
+                    <li class="item">Parallels / Boot Camp: específicos para correr Windows en Mac.</li>
+                    <li class="item">QEMU: emulador open source, más técnico, muy usado en desarrollo.</li>
+                    <li class="item">BlueStacks: emula Android en Windows/Mac.</li>
+                    <li class="item">DOSBox: emula MS-DOS para correr juegos y programas viejos.</li>
+                </ul>
+                <h3 class="sub-heading">Emulación vs. Virtualización</h3>
+                <ul class="characteristics">
+                    <li class="item">Emulación: simula hardware diferente (más lento, pero más flexible).</li>
+                    <li class="item">Virtualización: usa el mismo hardware, solo crea un "espacio aislado" para otro SO (más rápido).</li>
+                </ul>
+                <h3 class="sub-heading">Ventajas y desventajas</h3>
+                <ul class="characteristics">
+                    <li class="item">Pérdida de rendimiento (sobre todo en emulación pura).</li>
+                    <li class="item">Consumo de RAM y CPU.</li>
+                    <li class="item">Problemas de licencia (especialmente con macOS, que Apple no permite emular legalmente fuera de hardware Apple).</li>
+                    <li class="item">No siempre 100% compatible.</li>
+                </ul>
+                <div id="imagenes-container">
+                    <h2>Emuladores</h2>
+                    <h3 class="sub-heading">Windows</h3>
+                    <img src="/SO/imagenes/windowsemulador.png" alt="Windows emulador" class="emuladores-img">
+                    <a href="https://win7simu.visnalize.com/">Ir al emulador (windows 7)</a>
+                    
+                    <h3 class="sub-heading">MacOS</h3>
+                    <img src="/SO/imagenes/macosemulador.png" alt="MacOS emulador" class="emuladores-img">
+                    <a href="https://www.macos-web.app/" class="link-emulador">Ir al emulador (MacOs)</a>
+                    
+                    <h3 class="sub-heading">MacOs retro</h3>
+                    <img src="/SO/imagenes/macosretro.png" alt="Mac Os emulador retro" class="emuladores-img">
+                    <a href="https://infinitemac.org/1992/System%207.1" class="link-emulador">Ir al emulador (Macintosh)</a>
+                   
+                    <h3 class="sub-heading">Linux</h3>
+                    <img src="/SO/imagenes/linuxemulador.png" alt="Linux Ubuntu emulador" class="emuladores-img">
+                    <a href="https://distrosea.com/es/select/ubuntu/" class="link-emulador">Ir al emulador (Ubuntu)</a> 
+                </div>
+                <h3><a href="#">Volver arriba</a></h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

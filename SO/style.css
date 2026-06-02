@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+main#sistemas-operativos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+main#sistemas-operativos section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main#sistemas-operativos section#SO-0 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+main#sistemas-operativos section#SO-0 > h1 {
+    grid-column: 1 / -1;
+}
+
+main#sistemas-operativos section#SO-0 > h1,
+main#sistemas-operativos section#SO-1 > h1.title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2563eb;
+}
+
+main#sistemas-operativos section#SO-0 div#server,
+main#sistemas-operativos section#SO-0 div#workstation {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e2e8f0;
+}
+
+main#sistemas-operativos section#SO-0 div#server h2.title,
+main#sistemas-operativos section#SO-0 div#workstation h2.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+main#sistemas-operativos section#SO-0 div#server p.definition,
+main#sistemas-operativos section#SO-0 div#workstation p.definition {
+    color: #334155;
+    margin-bottom: 14px;
+}
+
+main#sistemas-operativos h3.sub-heading{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    margin: 16px 0 8px;
+}
+
+main#sistemas-operativos li.item{
+    margin-left: 40px;
+    list-style: disc;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+main#sistemas-operativos section#SO-1 > div,
+main#sistemas-operativos section#Emuladores > div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+main#sistemas-operativos section#SO-1 > div > h2.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 0;
+}
+
+main#sistemas-operativos section#SO-1 > div > p.description {
+    color: #334155;
+}
+
+main#sistemas-operativos section#SO-1 > div > ul.common-commands {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+main#sistemas-operativos section#SO-1 > div > ul.common-commands li.item {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e2e8f0;
+    margin-bottom: 5px;
+}
+
+main#sistemas-operativos section#SO-1 > div > ul.common-commands li.item::before {
+    content: '$ ';
+    color: #4ade80;
+}
+
+
+main#sistemas-operativos section#SO-1 > div > div,
+main#sistemas-operativos section#Emuladores > div > div {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 6px;
+}
+
+main#sistemas-operativos section#Emuladores div.imagenes-container {
+    justify-content: center;
+    align-items: center;
+}
+
+main#sistemas-operativos section#Emuladores img.emuladores-img {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+main#sistemas-operativos section#SO-1 > div > div > h2.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+main#sistemas-operativos section#SO-1 > div > div > p.description {
+    color: #334155;
+}
+
+main#sistemas-operativos section#SO-1 > div > div > ul.common-commands {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+main#sistemas-operativos section#SO-1 > div > div > ul.common-commands li.item {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e2e8f0;
+    margin-bottom: 5px;
+}
+
+main#sistemas-operativos section#SO-1 > div > div > ul.common-commands li.item::before {
+    content: '$ ';
+    color: #4ade80;
+}
+
+main#sistemas-operativos ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 680px) {
+    main#sistemas-operativos section#SO-0 {
+        grid-template-columns: 1fr;
+    }
+
+    main#sistemas-operativos section#SO-0 > h1,
+    main#sistemas-operativos section#SO-1 > h1.title {
+        font-size: 22px;
+    }
+
+    main#sistemas-operativos section#SO-0 div#server h2.title,
+    main#sistemas-operativos section#SO-0 div#workstation h2.title,
+    main#sistemas-operativos section#SO-1 > div > h2.title {
+        font-size: 16px;
+    }
+}
